@@ -1,0 +1,31 @@
+html, body {font-family: sans-serif, Arial; letter-spacing: -0.35px; font-size:1em; color: black;}
+
+a {font-family: sans-serif, Arial; letter-spacing: -0.35px; text-decoration: none; color: black;}
+a:hover {font-family: sans-serif, Arial; letter-spacing: -0.35px;  color: white; background-color: #000000;}
+a:selection {font-family: sans-serif, Arial; letter-spacing: -0.35px;  color:#000000;}
+a img:hover {background-color: none;}
+
+b {font-family: sans-serif, Arial; letter-spacing: -0.35px;}
+
+mark {background: #000; color:#fff;}
+
+.inline {display: inline-block;}
+.caption {font-family: sans-serif, Arial; letter-spacing: -0.35px; font-size: 1em; color: grey;}
+
+.color-option {
+  width: 7.5em;
+  height: 8em;
+  padding-right: 0.5em;
+  cursor: pointer;
+  border: 0.1em solid black;
+  border-radius: 0%;
+}
+
+#like1 { 
+  background-image: url(https://i.discogs.com/P0zhYuFitb2udE3SgddcWeqW5YkI2ACYK1oBtX2VszY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODky/NTYwLTE2NzQ3NDgw/MTEtMzEwOC5qcGVn.jpeg);
+  background-size: 8em; 
+}
+#like2 {
+  background-image: url(https://i.discogs.com/P0zhYuFitb2udE3SgddcWeqW5YkI2ACYK1oBtX2VszY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODky/NTYwLTE2NzQ3NDgw/MTEtMzEwOC5qcGVn.jpeg);
+  background-size: 8em;
+}

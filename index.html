@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head> 
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico"><link rel="stylesheet" href="./assets/style.css" type="text/css" />
+</head>
+
+<body>
+<div style="text-align:left">
+  <meta charset="utf-8">
+  <title>home</title>
+
+
+    <div class="inline" style="vertical-align:top; overflow-x:hidden; padding-right: 1em;">
+          <a href="#" class="tablink blue" onclick="openCity(event, 'home')" style="color: white;">
+            <img src="./assets/images/stone.png" style="width:150px;">
+          </a>
+              <br>
+              <br>
+          <a href="#" class="tablink" onclick="openCity(event, 'about')">
+            about
+          </a>
+              <br>
+          <a href="#" class="tablink" onclick="openCity(event, 'works')">
+            works
+          </a>
+              <br>
+              <br>
+          <a href="#" class="tablink" onclick="openCity(event, 'likes')">
+            things i like
+          </a>
+              <br>
+          <a href="#" class="tablink" onclick="openCity(event, 'workspace')">
+            current workspace
+          </a>    
+              <br>
+              <br>
+          <a href="https://twitter.com/meirisoda" target="_blank">twitter</a>
+              <br>
+          <a href="https://www.are.na/meirisoda-soda" target="_blank">are.na</a>
+              <br>
+              <br>
+              <br>
+          last update: 2023/10/29
+    </div>
+
+    <div class="inline" style="vertical-align:top; overflow-x:hidden;">
+<!--💚 ABOUT -->
+          <div id="home" class="w3-container city" style="display: block;">
+              <img src="./assets/images/horticultural-glyph.png" class="inline" style="width: 300px;">
+                <br>
+                <br>
+                <br>
+              becoming lightweight.
+          </div>
+<!--💚 ABOUT -->
+          <div id="about" class="w3-container city" style="display: none;">
+              <b>░s░o░d░a░</b>
+                <br>
+                <br>
+              soda (meirisoda) is an artist whose focus is to find closure and healing through art and music.
+                <br>
+                <br>
+              >&nbsp;<b>i create</b> illustrations, music, interactive media and sometimes writings.
+                <br>
+              >&nbsp;<b>i like</b> monochrome, exploring borders, ambient technology.  
+                <br>
+              >&nbsp;<b>i'm learning</b> to be.
+                <br>
+                <br>
+                <br>
+              <img src="./assets/images/logo-graphic-1.png" class="pfp" style="width:200px;">
+                <br>
+                <br>
+              english, 한국어, 日本語 (中文) OK
+
+          </div>
+<!--💚 WORKS -->
+          <div id="works" class="w3-container city" style="display: none;">
+            <div class="caption">click on title to collapse</div>
+                <br>
+            <details open>
+              <summary><mark>2023</mark> break</summary>
+                <img src="./assets/works/break_0805.png" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2023</mark> vectorheart study</summary>
+                <img src="./assets/works/vectorheart study1.png" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2023</mark> meirisoda.online</summary>
+                <img src="./assets/works/soda online.png" class="inline" style="width:400px;"><img src="./assets/works/soda online bw.png" class="inline" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2023</mark> game of life</summary>
+                <img src="./assets/works/game of life.png" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2022</mark> (growing) apple notes</summary>
+              <img src="./assets/works/sil.png" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2022</mark> blurred grey</summary>
+                <img src="./assets/works/found in grey.PNG" style="width:400px;">
+            </details>
+                <br>
+                <br>  
+            <details open>
+              <summary><mark>2022</mark> vestige of data</summary>
+                <img src="./assets/works/vestige of data.PNG" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2022</mark> (growing) apple notes</summary>
+              <img src="./assets/works/sil.png" style="width:400px;">
+            </details>
+                <br>
+                <br>    
+            <details open>
+              <summary><mark>2022</mark> multi_arm</summary>
+                <img src="./assets/works/multi_arm.png" style="width:400px;">
+            </details>
+                <br>
+                <br>
+            <details open>
+              <summary><mark>2022</mark> primary</summary>
+                <img src="./assets/works/primary.png" style="width:400px;">
+            </details>
+          
+          </div>
+
+
+<!--💚 LIKES -->
+          <div id="likes" class="w3-container city" style="display: none;">
+              <b>things i like</b>
+                <br>
+              <div class="caption">hover over image to see tooltip</div>
+                <br>
+                <br>
+              <div class="color-option" id="like1" title="12 - Ryuichi Sakamoto (2023)"></div>
+          </div>
+<!--💚 WORKSPACE -->
+          <div id="workspace" class="w3-container city" style="display: none;">
+            no current workspace 😔
+          </div>
+    </div>
+
+</div>
+</body>
+
+
+
+<script>
+    function openCity(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" blue", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " blue";
+    }
+</script>
+<script>
+  document.body.style.zoom="120%"
+</script>
