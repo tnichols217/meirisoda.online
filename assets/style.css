@@ -1,16 +1,16 @@
-html, body {font-family: sans-serif, Arial; letter-spacing: -0.35px; font-size:1em; color: black;}
+html, body {font-family: monospace; letter-spacing: -0.35px; font-size:1em; color: black;}
 
-a {font-family: sans-serif, Arial; letter-spacing: -0.35px; text-decoration: none; color: black;}
-a:hover {font-family: sans-serif, Arial; letter-spacing: -0.35px;  color: white; background-color: #000000;}
-a:selection {font-family: sans-serif, Arial; letter-spacing: -0.35px;  color:#000000;}
+a {font-family: monospace; letter-spacing: -0.35px; text-decoration: none; color: black;}
+a:hover {font-family: monospace; letter-spacing: -0.35px;  color: white; background-color: #000000;}
+a:selection {font-family: monospace; letter-spacing: -0.35px;  color:#000000;}
 a img:hover {background-color: none;}
 
-b {font-family: sans-serif, Arial; letter-spacing: -0.35px;}
+b {font-family: monospace; letter-spacing: -0.35px;}
 
 mark {background: #000; color:#fff;}
 
 .inline {display: inline-block;}
-.caption {font-family: sans-serif, Arial; letter-spacing: -0.35px; font-size: 1em; color: grey;}
+.caption {font-family: monospace; letter-spacing: -0.35px; font-size: 1em; color: grey;}
 
 .color-option {
   width: 7.5em;
