@@ -1,4 +1,4 @@
-html, body {font-family: monospace; letter-spacing: -0.35px; font-size:1.2em; color: black;}
+html, body {font-family: monospace; letter-spacing: -0.35px; font-size:1em; color: black;}
 
 a {font-family: monospace; letter-spacing: -0.35px; text-decoration: none; color: black;}
 a:hover {font-family: monospace; letter-spacing: -0.35px;  color: white; background-color: #000000;}
