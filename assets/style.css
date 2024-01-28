@@ -1,21 +1,71 @@
-html, body {font-family: monospace; letter-spacing: -0.35px; font-size:1em; color: black;}
+html, body {
+  font-family: monospace; 
+  letter-spacing: -0.35px; 
+  font-size:1em; 
+  color: black;
+}
 
-a {font-family: monospace; letter-spacing: -0.35px; text-decoration: none; color: black;}
-a:hover {font-family: monospace; letter-spacing: -0.35px;  color: white; background-color: black;}
-a:selection {font-family: monospace; letter-spacing: -0.35px;  color:black;}
-a img:hover {background-color: none;}
+object {
+  width: 100%;
+}
 
-b {font-family: monospace; letter-spacing: -0.35px;}
+a {
+  font-family: monospace; 
+  letter-spacing: -0.35px; 
+  text-decoration: none; 
+  color: black;
+}
+a:hover {
+  font-family: monospace; 
+  letter-spacing: -0.35px;  
+  color: white; 
+  background-color: black;
+}
+a:selection {
+  font-family: monospace; 
+  letter-spacing: -0.35px;  
+  color:black;
+}
+a img:hover {
+  background-color: none;
+}
 
-mark {background: black; color:white;}
+b {
+  font-family: monospace; 
+  letter-spacing: -0.35px;
+}
 
-.inline {display: inline-block; vertical-align:top;}
-.header1em {overflow-x:hidden; padding-right: 1em;}
-.header2em {overflow-x:hidden; padding-right: 2em;}
-.header3em {verflow-x:hidden; padding-right: 3em;}
-.caption {font-family: monospace; letter-spacing: -0.35px; font-size: 1em; color: grey;}
+mark {
+  background: black; 
+  color:white;
+}
 
-h2 {background-color: #efefef;}
+.inline {
+  display: inline-block; 
+  vertical-align:top;
+}
+.header1em {
+  overflow-x:hidden; 
+  padding-right: 1em;
+}
+.header2em {
+  overflow-x:hidden; 
+  padding-right: 2em;
+}
+.header3em {
+  overflow-x:hidden; 
+  padding-right: 3em;
+}
+.caption {
+  font-family: monospace; 
+  letter-spacing: -0.35px; 
+  font-size: 1em; 
+  color: grey;
+}
+
+h2 {
+  background-color: #efefef;
+}
 
 .color-option {
   width: 7.5em;
