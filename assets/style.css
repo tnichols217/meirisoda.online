@@ -1,66 +1,32 @@
 html, body {
-  font-family: monospace; 
-  letter-spacing: -0.35px; 
-  font-size:1em; 
+  font-family: Arial; 
+  /* letter-spacing: -0.35px;  */
+  font-size:16px; 
   color: black;
 }
 
-object {
-  width: 100%;
-}
+object {width: 100%;}
 
-a {
-  font-family: monospace; 
-  letter-spacing: -0.35px; 
-  text-decoration: none; 
-  color: black;
-}
-a:hover {
-  font-family: monospace; 
-  letter-spacing: -0.35px;  
-  color: white; 
-  background-color: black;
-}
-a:selection {
-  font-family: monospace; 
-  letter-spacing: -0.35px;  
-  color:black;
-}
-a img:hover {
-  background-color: none;
-}
+a { text-decoration: none; color: black;}
+a:hover { color: white; background-color: black;}
+a:selection { color:black;}
+a img:hover { background-color: none;}
 
-b {
-  font-family: monospace; 
-  letter-spacing: -0.35px;
-}
+mark {background: black; color:white;}
 
-mark {
-  background: black; 
-  color:white;
-}
+header { float: left; margin: 20px 60px 20px 20px;}
+footer { clear: both; margin: 0; border-top: 1px dotted black; }
 
-header {
-  float: left;
-  margin: 30px 60px 30px 30px;
+h2 {
+  background-color: #efefef;
 }
+nav { padding: 25px;}
+nav ul li {list-style-type: none;}
 
-.inline {
-  display: inline-block; 
-  vertical-align:top;
-}
-/* .header1em {
-  overflow-x:hidden; 
-  padding-right: 1em;
-}
-.header2em {
-  overflow-x:hidden; 
-  padding-right: 2em;
-}
-.header3em {
-  overflow-x:hidden; 
-  padding-right: 3em;
-} */
+.inline { display: inline-block; vertical-align:top;}
+.inline_bottom { display: inline-block; vertical-align: middle;}
+
+.click {text-decoration: underline;}
 .caption {
   font-family: monospace; 
   letter-spacing: -0.35px; 
@@ -68,9 +34,6 @@ header {
   color: grey;
 }
 
-h2 {
-  background-color: #efefef;
-}
 
 .color-option {
   width: 7.5em;
