@@ -1,6 +1,6 @@
 html, body {
-  font-family: Arial; 
-  /* letter-spacing: -0.35px;  */
+  font-family: monospace; 
+  letter-spacing: -0.35px; 
   font-size:16px; 
   color: black;
 }
@@ -25,13 +25,18 @@ nav ul li {list-style-type: none;}
 
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
-
+.link {margin:0px; padding:0px;}
 .click {text-decoration: underline;}
 .caption {
   font-family: monospace; 
   letter-spacing: -0.35px; 
   font-size: 1em; 
   color: grey;
+}
+
+iframe {
+  border: none;
+  width: 60%
 }
 
 
