@@ -40,11 +40,16 @@ mark {
   color:white;
 }
 
+header {
+  float: left;
+  margin: 30px 60px 30px 30px;
+}
+
 .inline {
   display: inline-block; 
   vertical-align:top;
 }
-.header1em {
+/* .header1em {
   overflow-x:hidden; 
   padding-right: 1em;
 }
@@ -55,7 +60,7 @@ mark {
 .header3em {
   overflow-x:hidden; 
   padding-right: 3em;
-}
+} */
 .caption {
   font-family: monospace; 
   letter-spacing: -0.35px; 
@@ -74,13 +79,4 @@ h2 {
   cursor: pointer;
   border: 0.1em solid black;
   border-radius: 0%;
-}
-
-#like1 { 
-  background-image: url(https://i.discogs.com/P0zhYuFitb2udE3SgddcWeqW5YkI2ACYK1oBtX2VszY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODky/NTYwLTE2NzQ3NDgw/MTEtMzEwOC5qcGVn.jpeg);
-  background-size: 8em; 
-}
-#like2 {
-  background-image: url(https://i.discogs.com/P0zhYuFitb2udE3SgddcWeqW5YkI2ACYK1oBtX2VszY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODky/NTYwLTE2NzQ3NDgw/MTEtMzEwOC5qcGVn.jpeg);
-  background-size: 8em;
 }
