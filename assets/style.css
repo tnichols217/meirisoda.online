@@ -28,6 +28,8 @@ nav ul li {list-style-type: none;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
 .link {margin:0px; padding:0px;}
 .click {text-decoration: underline;}
+
+.works {max-width:50em;}
 .caption {
   font-family: monospace; 
   letter-spacing: -0.35px; 
