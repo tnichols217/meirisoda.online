@@ -1,10 +1,10 @@
 html, body {
-  font-family: monospace; 
-  letter-spacing: -0.35px; 
+  font-family: serif; 
+  /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
+  /* #3b3b3b */
 }
-
 object {width: 100%;}
 
 a { text-decoration: none; color: black;}
@@ -21,7 +21,7 @@ footer { clear: both; margin: 0; border-top: 1px dotted black; }
 h2 {
   background-color: #efefef;
 }
-nav { padding: 25px; padding-left: 0px;}
+nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 
 .inline { display: inline-block; vertical-align:top;}
@@ -50,4 +50,11 @@ iframe {
   cursor: pointer;
   border: 0.1em solid black;
   border-radius: 0%;
+}
+.relative {
+  display: relative;
+}
+.absolute {
+  display: absolute;
+  z-index: 999;
 }
