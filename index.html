@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-      <link rel="stylesheet" href="../assets/style.css" type="text/css">
+      <link rel="stylesheet" href="/assets/style.css" type="text/css">
       <script>
           function resizeIframe(obj) {
             obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
@@ -11,7 +11,7 @@
   <body>
 <!-- 🔴 TOP NAV -->
     <header>
-      <a href="./index.html"><img src="./assets/soda/mebk.png" style="width:5em;"></a>
+      <a href="./index.html"><img src="./assets/soda/vectorgrey_nobg.png" style="width:20em;"></a>
     </header>
   
     <nav class="inline_bottom" style="pointer-events: auto;">
@@ -21,18 +21,18 @@
           <li><a a href="#" onclick="openInIframe_2()" class="nav-link">inspiration</a></li>
       </ul>
       <ul class="inline_bottom">
-          <iframe id="subpage" name="subpage"></iframe>
+          <iframe class="inline_bottom" id="subpage" name="subpage" onload="resizeIframe(this)"></iframe>
       </ul>
     </nav>
-    
+    <br>
 <!-- 🔴 MAIN -->
     <main>
       <iframe src="welcome.html" id="main" name="main" onload="resizeIframe(this)"></iframe>
 
 <!-- 🔴 FOOTER -->
       <footer>
-          <p><a href="/about.html">about me</a> | <a href="https://twitter.com/meirisoda">twitter</a> | <a href="https://github.com/meirisoda/meirisoda.github.io">source</a></p>
-          <p>© 2015-2024 meirisoda. All the rights to the original artworks and text belong to soda. No reproduction or republication without written permission.</p>
+          <p><a href="/pages/about.html" target="main">about me</a> | <a href="https://twitter.com/meirisoda">twitter</a> | <a href="https://github.com/meirisoda/meirisoda.github.io">source</a></p>
+          <p>©2024 meirisoda. All the rights to the original artworks and text belong to soda. No reproduction or republication without written permission.</p>
       </footer>
     </main>
 
@@ -69,6 +69,6 @@
         });
       });
     </script>
-    
+
   </body> 
 </html>
