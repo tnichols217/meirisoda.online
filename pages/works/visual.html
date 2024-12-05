@@ -2,17 +2,29 @@
 <html>
     <head>
         <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("/assets/static/header.html"); 
+            $("#footer").load("/assets/static/footer.html"); 
+            });
+        </script> 
     </head>
 
     <body>
-        <main>
+        <div id="header"></div>
+
             <b>visual works</b>
                 <br>
                 <br>
             <details>
                 <summary><mark>open</mark> <i>illustrations/graphics</i></summary>
-                    <img class="works" src="/assets/works/2024/archimedes.png">
-                    <div class="caption">archimedes (Supernote Nomad, 2024)</div>
+                    <img class="works" src="/assets/works/2024/aristocles.png">
+                    <div class="caption">aristocles (Supernote Nomad, 2024)</div>
                         <br>
                     <img class="works" src="/assets/works/2023/vectorheart.png">
                     <div class="caption">vectorheart study (Clip Studio Paint, 2023)</div>
@@ -41,7 +53,7 @@
                         <br>
                     <img class="works" src="/assets/works/sketchbook/page6.png">
             </details> 
-        </main>
+        <div id="footer"></div>
     </body>
     
 </html>

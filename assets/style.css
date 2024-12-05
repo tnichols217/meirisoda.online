@@ -24,6 +24,7 @@ h2 {
 nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 
+.pixel {font-family: domesticpixel; font-size: 30px; color: white;}
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
 .link {margin:0px; padding:0px;}
@@ -57,4 +58,12 @@ iframe {
 .absolute {
   display: absolute;
   z-index: 999;
+}
+
+@font-face {
+  font-family: "domesticpixel";
+  src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

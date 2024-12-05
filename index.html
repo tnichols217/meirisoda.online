@@ -2,69 +2,29 @@
 <html>
   <head>
       <link rel="stylesheet" href="/assets/style.css" type="text/css">
-      <script>
-          function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-          }
+      <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous">
       </script>
+      <script> 
+        $(function(){
+          $("#header").load("/assets/static/header.html"); 
+          $("#footer").load("/assets/static/footer.html"); 
+        });
+      </script> 
   </head>
   <body>
 
-    <header class="inline_bottom">
-      <a href="/index.html"><img src="/assets/soda/vectorgrey_nobg.png" style="width:20em;"></a>
-    </header>
-  
-    <nav class="inline_bottom" style="pointer-events: auto;">
-      <ul class="inline">
-          <li><a href="#" onclick="openInIframe()" class="nav-link">works</a></li>
-          <li><a href="#" onclick="openInIframe_1()" class="nav-link">blog</a></li>
-          <li><a a href="#" onclick="openInIframe_2()" class="nav-link">inspiration</a></li>
-      </ul>
-      <ul class="inline_bottom">
-          <iframe class="inline_bottom" id="subpage" name="subpage" onload="resizeIframe(this)"></iframe>
-      </ul>
-    </nav>
-    
-    <main>
-      <iframe src="welcome.html" id="main" name="main" onload="resizeIframe(this)"></iframe>
+    <div id="header"></div>
 
-      <footer>
-          <p><a href="/pages/about.html" target="main">about me</a> | <a href="https://twitter.com/meirisoda">twitter</a> | <a href="https://github.com/meirisoda/meirisoda.github.io">source</a></p>
-          <p>©2024 meirisoda. All the rights to the original artworks and text belong to soda. No reproduction or republication without written permission.</p>
-      </footer>
-    </main>
-
-    <script>
-      function openInIframe() {
-          document.getElementById('main').src = '/pages/works.html';
-          document.getElementById('subpage').src = '/pages/subpage/works.html';
-      }
-      function openInIframe_1() {
-          document.getElementById('main').src = '/pages/blog.html';
-          document.getElementById('subpage').src = '/pages/subpage/blog.html';
-      }
-      function openInIframe_2() {
-          document.getElementById('main').src = '/pages/inspiration.html';
-          document.getElementById('subpage').src = '/pages/subpage/inspiration.html';
-      }
-    </script>
-
-    <script>
-      document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', function(event) {
-          document.querySelectorAll('nav a').forEach(a => {
-            if (a !== this) {
-              a.textContent = a.textContent.replace('/', '');
-            }
-          });
-
-          if (!this.textContent.endsWith('/')) {
-            this.textContent += '/';
-          }
-        });
-      });
-    </script>
-
-
+      <img class="relative" src="/assets/images/aristocles_nobg.png" style="max-width: 40em;">
+      <div class="absolute" style="transform: translate(350px, -500px)">
+          aristocles walks through snowy hills
+          <br>in search of a soul.
+      </div>
+      <p>See <a href="/pages/now.html" class="click">recent changes</a>.</p>
+      
+    <div id="footer"></div>
   </body> 
 </html>

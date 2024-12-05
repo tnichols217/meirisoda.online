@@ -2,10 +2,22 @@
 <html>
     <head>
         <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("/assets/static/header.html"); 
+            $("#footer").load("/assets/static/footer.html"); 
+            });
+        </script>
     </head>
 
     <body>
-        <main>
+        <div id="header"></div>
+        <br>
             <img src="/assets/soda/ghostnobg.png" style="max-width: 20em;"><br>
 
             <b>░s░o░d░a░</b>
@@ -18,8 +30,9 @@
             <b>> i like </b>music, lightness, spectrums<br>
             <b>> i use </b>sunvox, SuperCollider, Clip Studio Paint, Procreate<br>
             <b>> i'm learning </b>to be. 
-    
-        </main>
+        <br>
+        <br>
+        <div id="footer"></div>
     </body>
     
 </html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+      <link rel="stylesheet" href="/assets/style.css" type="text/css">
+
+      <script>
+        function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
+  </head>
+  <body>
+
+    <header class="inline_bottom">
+      <a href="/index.html"><img src="/assets/soda/vectorgrey_nobg.png" style="width:20em;"></a>
+    </header>
+  
+    <nav class="inline_bottom" style="pointer-events: auto;">
+      <ul class="inline">
+          <li><a href="/pages/works.html" onclick="openInIframe()" class="nav-link">works</a></li>
+          <li><a href="/pages/blog.html" onclick="openInIframe()" class="nav-link">blog</a></li>
+          <li><a a href="/pages/inspiration.html" onclick="openInIframe()" class="nav-link">inspiration</a></li>
+      </ul>
+      <ul class="inline_bottom">
+          <iframe class="inline_bottom" id="subpage" name="subpage" onload="resizeIframe(this)"></iframe>
+      </ul>
+    </nav>
+</body>
+
+<script>
+    function openInIframe() {
+        document.getElementById('subpage').src = '/pages/subpage/works.html';
+    }
+    function openInIframe_1() {
+        document.getElementById('subpage').src = '/pages/subpage/blog.html';
+    }
+    function openInIframe_2() {
+        document.getElementById('subpage').src = '/pages/subpage/inspiration.html';
+    }
+  </script>
+
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(event) {
+        document.querySelectorAll('nav a').forEach(a => {
+          if (a !== this) {
+            a.textContent = a.textContent.replace('/', '');
+          }
+        });
+
+        if (!this.textContent.endsWith('/')) {
+          this.textContent += '/';
+        }
+      });
+    });
+  </script>
+</html>

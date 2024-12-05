@@ -2,30 +2,38 @@
 <html>
     <head>
         <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("/assets/static/header.html"); 
+            $("#footer").load("/assets/static/footer.html"); 
+            });
+        </script>
     </head>
 
     <body>
-        <main>
+        <div id="header"></div>
+        <br>
             soda creates through a variety of mediums, ranging from sound, illustration, to websites.
             <br>
             <br>
-            <br>
             <details open>
-                <summary><mark>click</mark> <b><i><a href="/pages/works/visual.html" class="nav-link">visual</a></i></b></summary>
-                <p>visual works (illustration, graphic design etc.).</p>
-                <img src="/assets/works/2024/archimedes.png" style="max-width: 30em;">
+                <summary> <a href="/pages/works/visual.html" class="nav-link"><mark class="pixel">visual</mark> visual works (illustration, graphic design etc.).</a></summary>
             </details> 
             <br>
             <details open>
-                <summary><mark>click</mark> <b><i><a href="/pages/works/audio.html" class="nav-link">audio</a></i></b></summary>
-                <p>audio works (music, snippets).</p>
+                <summary> <a href="/pages/works/audio.html" class="nav-link pixel"><mark>audio</mark></a> audio works (music, snippets).</summary>
             </details> 
             <br>
             <details open>
-                <summary><mark>click</mark> <b><i><a href="/pages/works/other.html" class="nav-link">other</a></i></b></summary>
-                <p>other things i've done/made that can't be categorized into the above categories.</p>
+                <summary> <a href="/pages/works/other.html" class="nav-link pixel"><mark>other</mark></a> other things i've done/made that can't be categorized into the above categories.</summary>
             </details> 
-        </main>
+        
+        <div id="footer"></div>
     </body>
     
 </html>
