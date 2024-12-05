@@ -20,7 +20,7 @@ footer { clear: both; margin: 0; border-top: 1px dotted black; }
 h2 {
   background-color: #efefef;
 }
-nav { padding: 25px;}
+nav { padding: 10px;}
 nav ul li {list-style-type: none;}
 
 .inline { display: inline-block; vertical-align:top;}
