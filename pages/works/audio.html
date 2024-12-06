@@ -2,15 +2,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("/assets/static/header.html"); 
+            $("#header-works").load("/assets/static/header_works.html");
+            $("#header-insp").load("/assets/static/header_inspiration.html"); 
+            $("#footer").load("/assets/static/footer.html"); 
+            });
+        </script> 
     </head>
 
     <body>
-        <main>
-            <b>audio works</b>
-            <br>
-            <br>
-            insert music here
-        </main>
+        <div id="header-works"></div>
+            AUDIO
+        <div id="footer"></div>
     </body>
     
 </html>
