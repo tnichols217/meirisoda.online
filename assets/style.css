@@ -60,6 +60,26 @@ iframe {
   z-index: 999;
 }
 
+#top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px; 
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px; 
+  font-family: serif;
+}
+
+#top:hover {
+  background-color: black;
+  color: white; /* Add a dark-grey background on hover */
+}
+
 @font-face {
   font-family: "domesticpixel";
   src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");
