@@ -20,7 +20,7 @@ nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 
 mark {background: black; color:white;}
-/* mark:hover {background: white; color: black;} */
+mark:hover {background: white; color: black;}
 h2 {
   background-color: #efefef;
 }
@@ -42,6 +42,7 @@ h2 {
 
 .notes {
   background: #EEEEEE;
+  width: fit-content;
   border-radius: 8px;
   margin: 1.5vh 0.5vw;
   padding: 3px;
