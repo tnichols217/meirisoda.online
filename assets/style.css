@@ -1,34 +1,35 @@
-html, body {
+html, body, pre {
   font-family: serif; 
   /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
   /* #3b3b3b */
+  margin-left: 5px;
 }
 object {width: 100%;}
-
+main {max-width: 750px;}
 a { text-decoration: none; color: black;}
 a:hover { color: white; background-color: black;}
 a:selection { color:black;}
 a img:hover { background-color: none;}
 
-mark {background: black; color:white;}
-/* mark:hover {background: white; color: black;} */
-
 header { float: left; margin: 20px 60px 20px 20px;}
-footer { clear: both; margin: 0; border-top: 1px dotted black; }
+footer { clear: both; margin: 0; border-top: 2px dotted black; }
 
-h2 {
-  background-color: #efefef;
-}
 nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 
+mark {background: black; color:white;}
+/* mark:hover {background: white; color: black;} */
+h2 {
+  background-color: #efefef;
+}
 .pixel {font-family: domesticpixel; font-size: 30px; color: white;}
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
 .link {margin:0px; padding:0px;}
 .click {text-decoration: underline;}
+.border-top {border-top: 2px dotted black;}
 
 .works {max-width:50em;}
 .caption {
@@ -38,27 +39,17 @@ nav ul li {list-style-type: none;}
   color: grey;
 }
 
-iframe {
-  border: none;
-  width: 50%
+.notes {
+  background: #EEEEEE;
+  border-radius: 8px;
+  margin: 1.5vh 0.5vw;
+  padding: 3px;
+  box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
 }
 
 
-.color-option {
-  width: 7.5em;
-  height: 8em;
-  padding-right: 0.5em;
-  cursor: pointer;
-  border: 0.1em solid black;
-  border-radius: 0%;
-}
-.relative {
-  display: relative;
-}
-.absolute {
-  display: absolute;
-  z-index: 999;
-}
+.relative { display: relative;}
+.absolute { display: absolute; z-index: 999;}
 
 #top {
   display: none;
@@ -74,12 +65,19 @@ iframe {
   font-size: 16px; 
   font-family: serif;
 }
-
 #top:hover {
   background-color: black;
   color: white; /* Add a dark-grey background on hover */
 }
 
+
+details > summary {
+  list-style-type: '✣';
+}
+
+details[open] > summary {
+  list-style-type: '✣';
+}
 @font-face {
   font-family: "domesticpixel";
   src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");

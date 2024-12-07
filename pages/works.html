@@ -19,8 +19,9 @@
     </head>
 
     <body>
-        <div id="header-works"></div>
-        <br>
+    <div id="header-works"></div>
+        
+        <main>
             soda creates through a variety of mediums, ranging from sound, illustration, to websites.
             <br>
             <br>
@@ -35,8 +36,17 @@
             <details open>
                 <summary> <a href="/pages/works/other.html" class="nav-link"><mark class="pixel">other</mark>  :: other things i've done/made that can't be categorized into the above categories.</a></summary>
             </details> 
+        </main>
         
-        <div id="footer"></div>
-    </body>
+    <div id="footer"></div>
+    <body>
     
+    <script>
+        const form = document.querySelector('form'); 
+       
+        form.addEventListener('submit', function(event) { 
+         event.preventDefault(); 
+         // Your form submission logic here 
+       }); 
+    </script>
 </html>
