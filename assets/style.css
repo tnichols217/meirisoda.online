@@ -1,5 +1,5 @@
 html, body, pre {
-  font-family: Garamond, serif; 
+  font-family: serif; 
   /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
@@ -9,8 +9,8 @@ html, body, pre {
 object {width: 100%;}
 main {max-width: 750px;}
 a { text-decoration: none; color: black;}
-/* a:hover { color: white; background-color: black;} */
-a:hover {font-style:italic;}
+a:hover { color: white; background-color: black;}
+/* a:hover {font-style:italic;} */
 a:selection { color:black;}
 a img:hover { background-color: none;}
 
@@ -26,10 +26,12 @@ h2 {
   background-color: #efefef;
 }
 .pixel {font-family: domesticpixel; font-size: 30px; color: white;}
+.jp {font-family: serifjp; font-size: 16px;}
+.click {text-decoration: underline;}
+
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
 .link {margin:0px; padding:0px;}
-.click {text-decoration: underline;}
 .border-top {border-top: 2px dotted black;}
 
 .works {width:40em;}
@@ -101,13 +103,7 @@ details[open] > summary {
     content: 'close';
   }
 }
-@font-face {
-  font-family: "Garamond";
-  src: url("/assets/fonts/Garamond/EBGaramond-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 @font-face {
   font-family: "domesticpixel";
   src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");
