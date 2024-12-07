@@ -1,5 +1,5 @@
 html, body, pre {
-  font-family: serif; 
+  font-family: Garamond, serif; 
   /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
@@ -9,7 +9,8 @@ html, body, pre {
 object {width: 100%;}
 main {max-width: 750px;}
 a { text-decoration: none; color: black;}
-a:hover { color: white; background-color: black;}
+/* a:hover { color: white; background-color: black;} */
+a:hover {font-style:italic;}
 a:selection { color:black;}
 a img:hover { background-color: none;}
 
@@ -99,6 +100,13 @@ details[open] > summary {
   & > mark::after {
     content: 'close';
   }
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("/assets/fonts/Garamond/EBGaramond-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "domesticpixel";
