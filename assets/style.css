@@ -72,12 +72,32 @@ h2 {
 }
 
 
+#header[data-page] ul[data-page] {
+	display: none
+}
+#header[data-page="works"] ul[data-page="works"],
+#header[data-page="insp"] ul[data-page="insp"] {
+  display: inline-block;
+}
+
+#header[data-page="works"] a[data-page="works"]::after,
+#header[data-page="insp"] a[data-page="insp"]::after,
+#header[data-page="blog"] a[data-page="blog"]::after {
+  content: "/";
+}
+
 details > summary {
   list-style-type: '✣';
+  & > mark::after {
+    content: 'open';
+  }
 }
 
 details[open] > summary {
   list-style-type: '✣';
+  & > mark::after {
+    content: 'close';
+  }
 }
 @font-face {
   font-family: "domesticpixel";
