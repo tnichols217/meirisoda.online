@@ -1,40 +1,28 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" href="/assets/style.css" type="text/css">
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-      $(function(){
-        $("#header").load("/assets/static/header.html"); 
-        $("#footer").load("/assets/static/footer.html"); 
-      });
-    </script> 
-  </head>
-  <body>
-  <div id="header" data-page="index"></div>
-    <main>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script src="/assets/js/header.js"></script>
+        <script src="/assets/js/top.js"></script>
+    </head>
+    <body>
+    <div id="header" data-page="index"></div>
+        <main>
 
-        <img class="relative" src="/assets/images/aristocles_nobg1.png" style="max-width: 40em;">
-        <div class="absolute" style="transform: translate(350px, -500px)">
-            aristocles walks through snowy hills
-            <br>in search of a soul.
-        </div>
-        <p>See <a href="/pages/now.html" class="click">recent changes</a>.</p>
-        
-    </main>    
-  <div id="footer"></div>
-  <body> 
+            <img class="relative" src="/assets/images/aristocles_nobg1.png" style="max-width: 40em;">
+            <div class="absolute" style="transform: translate(350px, -500px)">
+                aristocles walks through snowy hills
+                <br>in search of a soul.
+            </div>
+            <p>See <a href="/pages/now.html" class="click">recent changes</a>.</p>
+            
+        </main>    
+    <div id="footer"></div>
+    <body> 
 
-  <script>
-      const form = document.querySelector('form'); 
-     
-      form.addEventListener('submit', function(event) { 
-       event.preventDefault(); 
-       // Your form submission logic here 
-     }); 
-  </script>
 </html>

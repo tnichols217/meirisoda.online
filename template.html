@@ -7,47 +7,20 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
         </script>
-        <script> 
-            $(function(){
-            $("#header").load("/assets/static/header.html"); 
-            $("#header-works").load("/assets/static/header_works.html");
-            $("#header-insp").load("/assets/static/header_inspiration.html"); 
-            $("#header-blog").load("/assets/static/header_blog.html");
-            $("#footer").load("/assets/static/footer.html"); 
-            });
-        </script> 
+        <script src="/assets/js/header.js"></script>
+        <script src="/assets/js/top.js"></script>
+
     </head>
 
     <body>
-    <div id="header"></div>
+    <div id="header" data-page></div>
 
         <main>
             <button onclick="topFunction()" id="top" title="Go to top">back to top</button> 
             content goes header
         </main>
-        
+
     <div id="footer"></div>
     <body>
     
-    <script>
-        // Get the button:
-        let mybutton = document.getElementById("top");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        } 
-    </script>
 </html>

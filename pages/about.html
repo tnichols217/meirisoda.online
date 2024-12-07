@@ -7,20 +7,13 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
         </script>
-        <script> 
-            $(function(){
-            $("#header").load("/assets/static/header.html"); 
-            $("#header-works").load("/assets/static/header_works.html");
-            $("#header-insp").load("/assets/static/header_inspiration.html"); 
-            $("#header-blog").load("/assets/static/header_blog.html"); 
-            $("#footer").load("/assets/static/footer.html"); 
-            });
-        </script>
+        <script src="/assets/js/header.js"></script>
+        <script src="/assets/js/top.js"></script>
     </head>
 
     <body>
-    <div id="header"></div>
-    
+    <div id="header" data-page="about"></div>
+
         <main>
             <img src="/assets/soda/ghostnobg.png" style="max-width: 20em;"><br>
 
