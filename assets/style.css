@@ -19,20 +19,18 @@ footer { clear: both; margin: 0; border-top: 2px dotted black; }
 
 nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
+li {margin-left: 15px;}
 
-mark {background: black; color:white;}
-mark:hover {background: white; color: black;}
-h2 {
-  background-color: #efefef;
-}
-.pixel {font-family: domesticpixel; font-size: 30px; color: white;}
+mark {background-color: white; color: black;}
+mark:hover {text-decoration: underline;}
+.pixel {font-family: domesticpixel; font-size: 30px;}
 .jp {font-family: serifjp; font-size: 16px;}
 .click {text-decoration: underline;}
 
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
 .link {margin:0px; padding:0px;}
-.border-top {border-top: 2px dotted black;}
+.border-top {border-top: 1px dotted black;}
 
 .works {width:40em;}
 .year {font-weight:bold;}
@@ -60,11 +58,11 @@ h2 {
   display: none;
   position: fixed;
   bottom: 50px;
-  left: 750px; 
+  left: 900px; 
   z-index: 99;
   border: none;
   outline: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);;
   color: black;
   cursor: pointer;
   font-size: 16px; 
@@ -86,21 +84,19 @@ h2 {
 
 #header[data-page="works"] a[data-page="works"]::after,
 #header[data-page="insp"] a[data-page="insp"]::after,
-#header[data-page="blog"] a[data-page="blog"]::after {
+#header[data-page="notes"] a[data-page="notes"]::after {
   content: "/";
 }
 
 details > summary {
-  list-style-type: '✣';
   & > mark::after {
-    content: 'open';
+    content: '';
   }
 }
 
 details[open] > summary {
-  list-style-type: '✣';
   & > mark::after {
-    content: 'close';
+    content: '';
   }
 }
 
