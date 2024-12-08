@@ -1,32 +1,39 @@
-html, body {
-  font-family: Arial; 
+html, body, pre {
+  font-family: serif; 
   /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
+  /* #3b3b3b */
+  margin-left: 5px;
 }
-
 object {width: 100%;}
-
+main {max-width: 750px;}
 a { text-decoration: none; color: black;}
 a:hover { color: white; background-color: black;}
+/* a:hover {font-style:italic;} */
 a:selection { color:black;}
 a img:hover { background-color: none;}
 
-mark {background: black; color:white;}
-
 header { float: left; margin: 20px 60px 20px 20px;}
-footer { clear: both; margin: 0; border-top: 1px dotted black; }
+footer { clear: both; margin: 0; border-top: 2px dotted black; }
 
-h2 {
-  background-color: #efefef;
-}
-nav { padding: 25px;}
+nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
+li {margin-left: 15px;}
+
+mark {background-color: white; color: black;}
+mark:hover {text-decoration: underline;}
+.pixel {font-family: domesticpixel; font-size: 30px;}
+.jp {font-family: serifjp; font-size: 16px;}
+.click {text-decoration: underline;}
 
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
+.link {margin:0px; padding:0px;}
+.border-top {border-top: 1px dotted black;}
 
-.click {text-decoration: underline;}
+.works {width:40em;}
+.year {font-weight:bold;}
 .caption {
   font-family: monospace; 
   letter-spacing: -0.35px; 
@@ -34,12 +41,69 @@ nav ul li {list-style-type: none;}
   color: grey;
 }
 
+.notes {
+  background: #EEEEEE;
+  width: fit-content;
+  border-radius: 8px;
+  margin: 1.5vh 0.5vw;
+  padding: 3px;
+  box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
+}
 
-.color-option {
-  width: 7.5em;
-  height: 8em;
-  padding-right: 0.5em;
+
+.relative { display: relative;}
+.absolute { display: absolute; z-index: 999;}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 900px; 
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);;
+  color: black;
   cursor: pointer;
-  border: 0.1em solid black;
-  border-radius: 0%;
+  font-size: 16px; 
+  font-family: serif;
+}
+#top:hover {
+  background-color: black;
+  color: white; /* Add a dark-grey background on hover */
+}
+
+
+#header[data-page] ul[data-page] {
+	display: none
+}
+#header[data-page="works"] ul[data-page="works"],
+#header[data-page="insp"] ul[data-page="insp"] {
+  display: inline-block;
+}
+
+#header[data-page="works"] a[data-page="works"]::after,
+#header[data-page="insp"] a[data-page="insp"]::after,
+#header[data-page="notes"] a[data-page="notes"]::after {
+  content: "/";
+}
+
+details > summary {
+  & > mark::after {
+    content: '';
+  }
+}
+
+details[open] > summary {
+  & > mark::after {
+    content: '';
+  }
+}
+
+@font-face {
+  font-family: "domesticpixel";
+  src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
