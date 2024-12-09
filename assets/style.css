@@ -1,3 +1,56 @@
+:root {
+  color-scheme: light dark; /* support both */
+  --font-light: white; 
+  --font-dark: black;
+
+  --background-light: white;
+  --background-dark: black; 
+}
+
+@media (prefers-color-scheme: dark) {
+  body, main, a {
+    color: white; 
+    background: black;
+  }
+  a {text-decoration: none; color: white;}
+  nav ul li {color: white;}
+  a:hover {color: black; background-color:white;}
+  a::selection {color:white;}
+
+  footer { clear: both; margin: 0; border-top: 2px dotted white; color: white; }
+
+  .notes {
+    background: #bbbbbb;
+    color: black;
+    width: fit-content;
+    border-radius: 8px;
+    margin: 1.5vh 0.5vw;
+    padding: 3px;
+    box-shadow: 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb;
+  }
+
+  #top {color:white;}
+  #top:hover {color: black; background-color:white;}
+}
+@media (prefers-color-scheme: light) {
+  a { text-decoration: none; color: black;}
+  a:hover { color: white; background-color: black;}
+  a::selection { color:black;}
+
+  header { float: left; margin: 20px 60px 20px 20px;}
+  footer { clear: both; margin: 0; border-top: 2px dotted black; }
+
+  .notes {
+    background: #EEEEEE;
+    color: black;
+    width: fit-content;
+    border-radius: 8px;
+    margin: 1.5vh 0.5vw;
+    padding: 3px;
+    box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
+  }
+}
+
 html, body, pre {
   font-family: serif; 
   /* letter-spacing: -0.35px;  */
@@ -8,14 +61,8 @@ html, body, pre {
 }
 object {width: 100%;}
 main {max-width: 750px;}
-a { text-decoration: none; color: black;}
-a:hover { color: white; background-color: black;}
-/* a:hover {font-style:italic;} */
-a:selection { color:black;}
 a img:hover { background-color: none;}
 
-header { float: left; margin: 20px 60px 20px 20px;}
-footer { clear: both; margin: 0; border-top: 2px dotted black; }
 
 nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
@@ -40,16 +87,6 @@ mark:hover {text-decoration: underline;}
   font-size: 1em; 
   color: grey;
 }
-
-.notes {
-  background: #EEEEEE;
-  width: fit-content;
-  border-radius: 8px;
-  margin: 1.5vh 0.5vw;
-  padding: 3px;
-  box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
-}
-
 
 .relative { display: relative;}
 .absolute { display: absolute; z-index: 999;}
@@ -78,12 +115,13 @@ mark:hover {text-decoration: underline;}
 	display: none
 }
 #header[data-page="works"] ul[data-page="works"],
-#header[data-page="insp"] ul[data-page="insp"] {
+#header[data-page="insp"] ul[data-page="insp"],
+#header[data-page="about"] a[data-page="about"] {
   display: inline-block;
 }
 
 #header[data-page="works"] a[data-page="works"]::after,
-#header[data-page="insp"] a[data-page="insp"]::after,
+#header[data-page="about"] a[data-page="about"]::after,
 #header[data-page="notes"] a[data-page="notes"]::after {
   content: "/";
 }
