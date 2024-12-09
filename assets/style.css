@@ -31,7 +31,13 @@
 
   #top {color:white;}
   #top:hover {color: black; background-color:white;}
+
+  .invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
+
+
 @media (prefers-color-scheme: light) {
   a { text-decoration: none; color: black;}
   a:hover { color: white; background-color: black;}
