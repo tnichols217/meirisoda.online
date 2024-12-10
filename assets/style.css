@@ -7,45 +7,15 @@
   --background-dark: black; 
 }
 
-@media (prefers-color-scheme: dark) {
-  body, main, a {
-    color: white; 
-    background: black;
-  }
-  a {text-decoration: none; color: white;}
-  nav ul li {color: white;}
-  a:hover {color: black; background-color:white;}
-  a::selection {color:white;}
-
-  footer { clear: both; margin: 0; border-top: 2px dotted white; color: white; }
-
-  .notes {
-    background: #bbbbbb;
-    color: black;
-    width: fit-content;
-    border-radius: 8px;
-    margin: 1.5vh 0.5vw;
-    padding: 3px;
-    box-shadow: 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb;
-  }
-
-  #top {color:white;}
-  #top:hover {color: black; background-color:white;}
-
-  .invert {
-    filter: invert(1) hue-rotate(180deg);
-  }
-}
-
 
 @media (prefers-color-scheme: light) {
   a { text-decoration: none; color: black;}
   a:hover { color: white; background-color: black;}
   a::selection { color:black;}
-
+  
   header { float: left; margin: 20px 60px 20px 20px;}
   footer { clear: both; margin: 0; border-top: 2px dotted black; }
-
+  
   .notes {
     background: #EEEEEE;
     color: black;
@@ -55,6 +25,11 @@
     padding: 3px;
     box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
   }
+
+  mark {background-color: black; color: white;}
+
+  .click2 {background-color: black; color:white;}
+  .click2:hover {background-color:white; color: black;}
 }
 
 html, body, pre {
@@ -74,8 +49,7 @@ nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 li {margin-left: 15px;}
 
-mark {background-color: white; color: black;}
-mark:hover {text-decoration: underline;}
+
 .pixel {font-family: domesticpixel; font-size: 30px;}
 .jp {font-family: serifjp; font-size: 16px;}
 .click {text-decoration: underline;}
@@ -85,6 +59,8 @@ mark:hover {text-decoration: underline;}
 .link {margin:0px; padding:0px;}
 .border-top {border-top: 1px dotted black;}
 
+.image {max-width: 750px;}
+.image_small {max-width: 500px;}
 .works {width:40em;}
 .year {font-weight:bold;}
 .caption {
@@ -117,20 +93,106 @@ mark:hover {text-decoration: underline;}
 }
 
 
-#header[data-page] ul[data-page] {
-	display: none
-}
-#header[data-page="works"] ul[data-page="works"],
-#header[data-page="insp"] ul[data-page="insp"],
-#header[data-page="about"] a[data-page="about"] {
-  display: inline-block;
+@media (prefers-color-scheme: dark) {
+  body, main, a {
+    color: white; 
+    background: black;
+  }
+  a {text-decoration: none; color: white;}
+  nav ul li {color: white;}
+  a:hover {color: black; background-color:white;}
+  a::selection {color:white;}
+
+  footer { clear: both; margin: 0; border-top: 2px dotted white; color: white; }
+
+  .notes {
+    background: #bbbbbb;
+    color: black;
+    width: fit-content;
+    border-radius: 8px;
+    margin: 1.5vh 0.5vw;
+    padding: 3px;
+    box-shadow: 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb;
+  }
+  mark {color: black; background-color: white;}
+
+  .click2 {background-color:white; color: black;}
+  .click2:hover {background-color: black; color:white;}
+
+  #top {color:white;}
+  #top:hover {color: black; background-color:white;}
+
+  .invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  #top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 900px; 
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; 
+    font-family: serif;
+  }
+  #top:hover {
+    background-color: white;
+    color: black; 
+  }
 }
 
-#header[data-page="works"] a[data-page="works"]::after,
-#header[data-page="about"] a[data-page="about"]::after,
-#header[data-page="notes"] a[data-page="notes"]::after {
-  content: "/";
+#header[data-page] ul[data-page] {
+  display: none
 }
+
+/* if page tag contains -- to display */
+#header[data-page~="works"] ul[data-page="works"],
+#header[data-page~="notes"] ul[data-page="notes"],
+#header[data-page~="insp"] ul[data-page="insp"],
+#header[data-page~="visual"] ul[data-page="visual"],
+#header[data-page~="other"] ul[data-page="other"],
+/* #header[data-page~="about"] ul[data-page="about"],  */
+#header[data-page~="about-2"] a[data-page="about-2"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#header[data-page~="works"] a[data-page="works"],
+#header[data-page~="insp"] a[data-page="insp"],
+#header[data-page~="notes"] a[data-page="notes"],
+#header[data-page~="visual"] a[data-page="visual"],
+#header[data-page~="other"] a[data-page="other"],
+#header[data-page~="about"] a[data-page="about"] {
+  &::after {
+    content: "/";
+  }
+}
+
+/* if page tag ends in -- italicized if current page*/
+#header[data-page$="works"] a[data-page="works"],
+#header[data-page$="notes"] a[data-page="notes"],
+#header[data-page$="insp"] a[data-page="insp"],
+#header[data-page$="about"] a[data-page="about"],
+#header[data-page$="visual"] a[data-page="visual"],
+#header[data-page$="audio"] a[data-page="audio"],
+#header[data-page$="other"] a[data-page="other"],
+#header[data-page$="illustrations"] a[data-page="illustrations"],
+#header[data-page$="sketchbook"] a[data-page="sketchbook"],
+#header[data-page$="infinition"] a[data-page="infinition"],
+#header[data-page$="expanse"] a[data-page="expanse"],
+#header[data-page$="github"] a[data-page="github"],
+#header[data-page$="archive"] a[data-page="archive"],
+#header[data-page$="music"] a[data-page="music"],
+#header[data-page$="people"] a[data-page="people"] {
+  font-style: italic;
+}
+
+
 
 details > summary {
   & > mark::after {
