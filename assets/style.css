@@ -156,8 +156,8 @@ li {margin-left: 15px;}
 #header[data-page~="insp"] ul[data-page="insp"],
 #header[data-page~="visual"] ul[data-page="visual"],
 #header[data-page~="other"] ul[data-page="other"],
-/* #header[data-page~="about"] ul[data-page="about"],  */
-#header[data-page~="about-2"] a[data-page="about-2"] {
+#header[data-page~="about"] ul[data-page="about"], 
+#header[data-page~="about-2"] ul[data-page="about-2"] {
   display: inline-block;
   vertical-align: top;
 }
@@ -178,6 +178,7 @@ li {margin-left: 15px;}
 #header[data-page$="notes"] a[data-page="notes"],
 #header[data-page$="insp"] a[data-page="insp"],
 #header[data-page$="about"] a[data-page="about"],
+#header[data-page$="about-2"] a[data-page="about-2"],
 #header[data-page$="visual"] a[data-page="visual"],
 #header[data-page$="audio"] a[data-page="audio"],
 #header[data-page$="other"] a[data-page="other"],
