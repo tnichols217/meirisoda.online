@@ -1,58 +1,22 @@
-:root {
-  color-scheme: light dark; /* support both */
-  --font-light: white; 
-  --font-dark: black;
-
-  --background-light: white;
-  --background-dark: black; 
-}
-
-
-@media (prefers-color-scheme: light) {
-  a { text-decoration: none; color: black;}
-  a:hover { color: white; background-color: black;}
-  a::selection { color:black;}
-  
-  header { float: left; margin: 20px 60px 20px 20px;}
-  footer { clear: both; margin: 0; border-top: 2px dotted black; }
-  
-  .notes {
-    background: #EEEEEE;
-    color: black;
-    width: fit-content;
-    border-radius: 8px;
-    margin: 1.5vh 0.5vw;
-    padding: 3px;
-    box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
-  }
-
-  mark {background-color: black; color: white;}
-
-  .click2 {background-color: black; color:white;}
-  .click2:hover {background-color:white; color: black;}
-}
-
-html, body, pre {
+html, body, pre, main {
   font-family: serif; 
-  /* letter-spacing: -0.35px;  */
   font-size:16px; 
   color: black;
-  /* #3b3b3b */
   margin-left: 5px;
 }
-object {width: 100%;}
 main {max-width: 750px;}
-a img:hover { background-color: none;}
-
+header { float: left; margin: 20px 60px 20px 20px;}
 
 nav { padding: 20px; padding-left: 0px;}
 nav ul li {list-style-type: none;}
 li {margin-left: 15px;}
 
+a { text-decoration: none; color: black;}
+a:hover { color: white; background-color: black;}
+a::selection { color:black;}
 
-.pixel {font-family: domesticpixel; font-size: 30px;}
-.jp {font-family: serifjp; font-size: 16px;}
 .click {text-decoration: underline;}
+.clickb {text-decoration: underline; font-weight: bold;}
 
 .inline { display: inline-block; vertical-align:top;}
 .inline_bottom { display: inline-block; vertical-align: middle;}
@@ -60,15 +24,7 @@ li {margin-left: 15px;}
 .border-top {border-top: 1px dotted black;}
 
 .image {max-width: 750px;}
-.image_small {max-width: 500px;}
-.works {width:40em;}
-.year {font-weight:bold;}
-.caption {
-  font-family: monospace; 
-  letter-spacing: -0.35px; 
-  font-size: 1em; 
-  color: grey;
-}
+.image_small {max-width: 600px;}
 
 .relative { display: relative;}
 .absolute { display: absolute; z-index: 999;}
@@ -87,11 +43,20 @@ li {margin-left: 15px;}
   font-size: 16px; 
   font-family: serif;
 }
-#top:hover {
-  background-color: black;
-  color: white; /* Add a dark-grey background on hover */
-}
+#top:hover { background-color: black; color: white; }
 
+@media (prefers-color-scheme: light) {  
+  footer { clear: both; margin: 0; border-top: 2px dotted black; }
+  .notes {
+    background: #EEEEEE;
+    color: black;
+    width: fit-content;
+    border-radius: 8px;
+    margin: 1.5vh 0.5vw;
+    padding: 3px;
+    box-shadow: 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE, 0 0 10px #EEEEEE;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   body, main, a {
@@ -99,33 +64,24 @@ li {margin-left: 15px;}
     background: black;
   }
   a {text-decoration: none; color: white;}
-  nav ul li {color: white;}
   a:hover {color: black; background-color:white;}
   a::selection {color:white;}
-
+  nav ul li {color: white;}
   footer { clear: both; margin: 0; border-top: 2px dotted white; color: white; }
-
   .notes {
-    background: #bbbbbb;
+    background: #7b7b7b;
     color: black;
     width: fit-content;
     border-radius: 8px;
     margin: 1.5vh 0.5vw;
     padding: 3px;
-    box-shadow: 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb, 0 0 10px #bbb;
+    box-shadow: 0 0 10px #7b7b7b, 0 0 10px #7b7b7b, 0 0 10px #7b7b7b, 0 0 10px #7b7b7b, 0 0 10px #7b7b7b, 0 0 10px #7b7b7b, 0 0 10px #7b7b7b;
   }
-  mark {color: black; background-color: white;}
-
-  .click2 {background-color:white; color: black;}
-  .click2:hover {background-color: black; color:white;}
-
   #top {color:white;}
   #top:hover {color: black; background-color:white;}
-
   .invert {
     filter: invert(1) hue-rotate(180deg);
   }
-
   #top {
     display: none;
     position: fixed;
@@ -152,10 +108,10 @@ li {margin-left: 15px;}
 
 /* if page tag contains -- to display */
 #header[data-page~="works"] ul[data-page="works"],
-#header[data-page~="notes"] ul[data-page="notes"],
-#header[data-page~="insp"] ul[data-page="insp"],
 #header[data-page~="visual"] ul[data-page="visual"],
+#header[data-page~="audio"] ul[data-page="audio"],
 #header[data-page~="other"] ul[data-page="other"],
+#header[data-page~="notes"] ul[data-page="notes"],
 #header[data-page~="about"] ul[data-page="about"], 
 #header[data-page~="about-2"] ul[data-page="about-2"] {
   display: inline-block;
@@ -163,10 +119,10 @@ li {margin-left: 15px;}
 }
 
 #header[data-page~="works"] a[data-page="works"],
-#header[data-page~="insp"] a[data-page="insp"],
-#header[data-page~="notes"] a[data-page="notes"],
 #header[data-page~="visual"] a[data-page="visual"],
 #header[data-page~="other"] a[data-page="other"],
+#header[data-page~="insp"] a[data-page="insp"],
+#header[data-page~="notes"] a[data-page="notes"],
 #header[data-page~="about"] a[data-page="about"] {
   &::after {
     content: "/";
@@ -191,26 +147,4 @@ li {margin-left: 15px;}
 #header[data-page$="music"] a[data-page="music"],
 #header[data-page$="people"] a[data-page="people"] {
   font-style: italic;
-}
-
-
-
-details > summary {
-  & > mark::after {
-    content: '';
-  }
-}
-
-details[open] > summary {
-  & > mark::after {
-    content: '';
-  }
-}
-
-@font-face {
-  font-family: "domesticpixel";
-  src: url("/assets/fonts/2020\ 01\ 09\ domesticpixel.ttf") format("ttf"), url("/assets/fonts/font.domestic.pixel.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
