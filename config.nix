@@ -2,8 +2,8 @@
   {
     "**/*" = {
       template = {
-        prefix = "<!DOCTYPE html>";
-        postfix = "";
+        prefix = "<!DOCTYPE html><html>";
+        postfix = "</html>";
         attribute = "{{([^{}]+)}}";
         nesting = "{{{}}}";
       };
