@@ -1,32 +1,51 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../../../templates/header.html" as="Heade"></Import>
+<Import src="../../../../templates/footer.html" as="Foot"></Import>
+<Import src="../../../../templates/top.html" as="Top"></Import>
+<Import src="../../../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="works other infinition"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
-            <button onclick="topFunction()" id="top" title="Go to top">(back to top)</button> 
-            
-            <h2>infinition</h2>
-                <img src="/assets/works/other/infinition2.png" class="image invert">
+<body>
+  <Heade data-page="works other infinition"></Heade>
 
-                <p>My first visual novel/interactive artwork; written and coded on twine.</p>
+  <main>
+    <h2>infinition</h2>
+    <img src="/assets/works/other/infinition2.png" class="image invert" />
 
-                <p>This was created for a class assignment in 2021. While the writing isn't very good, nor is there a very clear storyline, I believe that this is a piece that encapsulates the art I want to create and the feelings I want to convey in all of its imperfections.</p>
+    <p>
+      My first visual novel/interactive artwork; written and coded on twine.
+    </p>
 
-                <p>Play it on <a href="https://meirisoda.itch.io/infinition" target="_blank" class="click">itch.io</a> or on <a href="https://meirisoda.github.io/infinition/" target="_blank" class="click">meirisoda.github.io</a>.</p>
+    <p>
+      This was created for a class assignment in 2021. While the writing isn't
+      very good, nor is there a very clear storyline, I believe that this is a
+      piece that encapsulates the art I want to create and the feelings I want
+      to convey in all of its imperfections.
+    </p>
 
-                <p>The piece was largely inspired by Infinition by Quadrant (2004).</p>
-                <img src="/assets/works/other/infinition.png">
-        </main>
-        
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+    <p>
+      Play it on
+      <a
+        href="https://meirisoda.itch.io/infinition"
+        target="_blank"
+        class="click"
+        >itch.io</a
+      >
+      or on
+      <a
+        href="https://meirisoda.github.io/infinition/"
+        target="_blank"
+        class="click"
+        >meirisoda.github.io</a
+      >.
+    </p>
+
+    <p>The piece was largely inspired by Infinition by Quadrant (2004).</p>
+    <img src="/assets/works/other/infinition.png" />
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>

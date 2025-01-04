@@ -1,44 +1,56 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../templates/header.html" as="Heade"></Import>
+<Import src="../../templates/footer.html" as="Foot"></Import>
+<Import src="../../templates/top.html" as="Top"></Import>
+<Import src="../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="works"></div>
-        
-        <main>
-            <h2>works</h2>
+<head>
+  <Imports></Imports>
+</head>
 
-            <p>soda creates through a variety of mediums, ranging from sound, illustration, to websites.</p>
+<body>
+  <Heade data-page="works"></Heade>
 
-            <div>
-                <img src="/assets/works/illust/2022/multi_arm.webp" class="image_small">
-                <br>
-                <a href="/pages/works/visual.html"><div class="clickb inline">visual</div></a> — visual works (illustration, graphic design etc.).
-            </div>
+  <main>
+    <h2>works</h2>
 
-            <br>
+    <p>
+      soda creates through a variety of mediums, ranging from sound,
+      illustration, to websites.
+    </p>
 
-            <div>
-                <img src="/assets/works/audio/secret.webp" class="image_small">
-                <br>
-                <a href="/pages/works/audio.html"><div class="clickb inline">audio</div></a> — audio works (music, snippets).
-            </div>
+    <div>
+      <img src="/assets/works/illust/2022/multi_arm.webp" class="image_small" />
+      <br />
+      <a href="/pages/works/visual.html"
+        ><div class="clickb inline">visual</div></a
+      >
+      — visual works (illustration, graphic design etc.).
+    </div>
 
-            <br>
+    <br />
 
-            <div>
-                <img src="/assets/works/other/infinition2.png" class="image_small">
-                <br>
-                <a href="/pages/works/other.html"><div class="clickb inline">other</div></a> — other things i've done/made that can't be categorized into the above categories.
-            </div>
-        </main>
-        
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+    <div>
+      <img src="/assets/works/audio/secret.webp" class="image_small" />
+      <br />
+      <a href="/pages/works/audio.html"
+        ><div class="clickb inline">audio</div></a
+      >
+      — audio works (music, snippets).
+    </div>
+
+    <br />
+
+    <div>
+      <img src="/assets/works/other/infinition2.png" class="image_small" />
+      <br />
+      <a href="/pages/works/other.html"
+        ><div class="clickb inline">other</div></a
+      >
+      — other things i've done/made that can't be categorized into the above
+      categories.
+    </div>
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>
