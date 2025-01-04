@@ -1,42 +1,62 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../templates/header.html" as="Header"></Import>
+<Import src="../../templates/footer.html" as="Foot"></Import>
+<Import src="../../templates/top.html" as="Top"></Import>
+<Import src="../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="about"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
+<body>
+  <header data-page="about"></header>
 
-            soda (meirisoda) is an artist whose focus is to find closure and healing through art and music.
+  <main>
+    soda (meirisoda) is an artist whose focus is to find closure and healing
+    through art and music.
 
-            <p>
-                twitter: <a href="https://twitter.com/meirisoda" target="_main" class="click">@meirisoda</a><br />
-                bluesky: <a href="https://bsky.app/profile/meirisoda.online" target="_main" class="click">@meirisoda.online</a><br />
-                mastodon: <a href="https://mastodon.social/@meirisoda" target="_blank" class="click">meirisoda</a>
-                are.na: <a href="https://are.na/meirisoda-soda" target="_blank" class="click">meirisoda-soda</a>
+    <p>
+      twitter:
+      <a href="https://twitter.com/meirisoda" target="_main" class="click"
+        >@meirisoda</a
+      ><br />
+      bluesky:
+      <a
+        href="https://bsky.app/profile/meirisoda.online"
+        target="_main"
+        class="click"
+        >@meirisoda.online</a
+      ><br />
+      mastodon:
+      <a href="https://mastodon.social/@meirisoda" target="_blank" class="click"
+        >meirisoda</a
+      >
+      are.na:
+      <a href="https://are.na/meirisoda-soda" target="_blank" class="click"
+        >meirisoda-soda</a
+      >
+    </p>
 
-            </p>
+    <p>
+      <b>> creates </b>illustrations, music, web stuff, and sometimes
+      writings.<br />
+      <b>> likes </b>music, lightness, spectrums.<br />
+      <b>> uses </b>Clip Studio Paint, Procreate, sunvox, Logic Pro.<br />
+      <b>> learning </b>to exist.
+    </p>
 
-            <p>
-                <b>> creates </b>illustrations, music, web stuff, and sometimes writings.<br />
-                <b>> likes </b>music, lightness, spectrums.<br />
-                <b>> uses </b>Clip Studio Paint, Procreate, sunvox, Logic Pro.<br />
-                <b>> learning </b>to exist. 
-            </p>
+    <div class="notes">
+      <b>note : :</b><br />
+      <p>meirisoda.online is a static site built by hand.</p>
+      <p>
+        All the rights to the original artworks and text belong to soda. No
+        reproduction or republication without written permission. All images
+        have compressed or dithered to deliberately reduce file size and prevent
+        high resolution originals from circulating and being used without
+        permission.
+      </p>
+    </div>
+  </main>
 
-            <div class="notes">
-                <b>note : :</b><br />
-                <p>meirisoda.online is a static site built by hand.</p>
-                <p>All the rights to the original artworks and text belong to soda. No reproduction or republication without written permission. All images have compressed or dithered to deliberately reduce file size and prevent high resolution originals from circulating and being used without permission. </p>
-            </div>
-        </main>
-    
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+  <Foot></Foot>
+  <Top></Top>
+</body>

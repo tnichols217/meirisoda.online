@@ -1,45 +1,66 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../../../templates/header.html" as="Header"></Import>
+<Import src="../../../../templates/footer.html" as="Foot"></Import>
+<Import src="../../../../templates/top.html" as="Top"></Import>
+<Import src="../../../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="works other github"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
-            <button onclick="topFunction()" id="top" title="Go to top">(back to top)</button> 
-            
-            <h2>meirisoda.github.io</h2>
-                <p>meirisoda.github.io was my first website. There are many iterations, 4 of which are live below:</p>
+<body>
+  <header data-page="works other github"></header>
 
-                <div>
-                    <img src="/assets/works/other/github1.png" class="image">
-                    <a href="https://meirisoda.github.io/1" target="_blank" class="clickb">meirisoda.github.io/1</a> 
-                    <p>The first version of my website, and stylistically closest to the current site. As I was learning HTML, I didn't know the capabilities of CSS, and as such, the code is very messy (it is still messy). </p>               
-                </div>
-                    <br />
-                <div>
-                    <img src="/assets/works/other/github2.png" class="image">
-                    <a href="https://meirisoda.github.io/2" target="_blank" class="clickb">meirisoda.github.io/2</a>
-                    <p>Personally, my least favorite version. Lacks a cohesive body and unifying idea, and was a shallow attempt at creating a minimalist and "professional" website, ending up not representing me or my values at all.</p>               
-                </div>
-                    <br />
-                <div>
-                    <img src="/assets/works/other/github3.png" class="image">
-                    <a href="https://meirisoda.github.io/3" target="_blank" class="clickb">meirisoda.github.io/3</a> — This version of the website served as an experiment - both in what I could achieve from a website, but also for my identity.                
-                </div>
-                    <br />
-                <div>
-                    <img src="/assets/works/other/github4.png" class="image">
-                    <a href="https://meirisoda.github.io/4" target="_blank" class="clickb">meirisoda.github.io/4</a> — Built off /3, this version is my personal favorite and what I think looks the most polished.              
-                </div>
-        </main>
-        
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+  <main>
+    <h2>meirisoda.github.io</h2>
+    <p>
+      meirisoda.github.io was my first website. There are many iterations, 4 of
+      which are live below:
+    </p>
+
+    <div>
+      <img src="/assets/works/other/github1.png" class="image" />
+      <a href="https://meirisoda.github.io/1" target="_blank" class="clickb"
+        >meirisoda.github.io/1</a
+      >
+      <p>
+        The first version of my website, and stylistically closest to the
+        current site. As I was learning HTML, I didn't know the capabilities of
+        CSS, and as such, the code is very messy (it is still messy).
+      </p>
+    </div>
+    <br />
+    <div>
+      <img src="/assets/works/other/github2.png" class="image" />
+      <a href="https://meirisoda.github.io/2" target="_blank" class="clickb"
+        >meirisoda.github.io/2</a
+      >
+      <p>
+        Personally, my least favorite version. Lacks a cohesive body and
+        unifying idea, and was a shallow attempt at creating a minimalist and
+        "professional" website, ending up not representing me or my values at
+        all.
+      </p>
+    </div>
+    <br />
+    <div>
+      <img src="/assets/works/other/github3.png" class="image" />
+      <a href="https://meirisoda.github.io/3" target="_blank" class="clickb"
+        >meirisoda.github.io/3</a
+      >
+      — This version of the website served as an experiment - both in what I
+      could achieve from a website, but also for my identity.
+    </div>
+    <br />
+    <div>
+      <img src="/assets/works/other/github4.png" class="image" />
+      <a href="https://meirisoda.github.io/4" target="_blank" class="clickb"
+        >meirisoda.github.io/4</a
+      >
+      — Built off /3, this version is my personal favorite and what I think
+      looks the most polished.
+    </div>
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>

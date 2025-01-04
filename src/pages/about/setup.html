@@ -1,17 +1,17 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../../templates/header.html" as="Header"></Import>
+<Import src="../../../templates/footer.html" as="Foot"></Import>
+<Import src="../../../templates/top.html" as="Top"></Import>
+<Import src="../../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="about about-2"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
-            <!-- <h2>setup</h2>
+<body>
+  <header data-page="about setup"></header>
+
+  <main>
+    <!-- <h2>setup</h2>
             
             <p>My current setup looks a little like this:</p>
             <li>ROG Zephyrus 14 (2023)</li>
@@ -19,9 +19,8 @@
             <li>KDE Plasma 6</li>
 
             <p>I switched to my ROG Zephyrus 14 (2023) from my Dell XPS 13 9380 early this year. It was a necessary change, as I </p> -->
-        </main>
-    
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>

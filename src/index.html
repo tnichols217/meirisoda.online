@@ -1,85 +1,62 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
-    <body>
-    <div id="header" data-page="index"></div>
-        <main>
-            <div class="snowflakes" aria-hidden="true">
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-                <div class="snowflake">
-                  <div class="inner">❅</div>
-                </div>
-              </div>
+<Import src="../templates/header.html" as="Header"></Import>
+<Import src="../templates/footer.html" as="Foot"></Import>
+<Import src="../templates/top.html" as="Top"></Import>
+<Import src="../templates/imports.html" as="Imports"></Import>
+<Import src="../templates/snowflake.html" as="Snow"></Import>
 
-            <img class="relative" src="/assets/images/aristocles_nobg_dither.webp" style="max-width: 40em;">
-            <div class="absolute" style="transform: translate(350px, -500px)">
-                aristocles wishes everyone a 
-                <br>happy holidays. 
-                <!-- aristocles walks through snowy hills
-                <br>in search of a soul. -->
-            </div>
-            
-            <p>This site uses jquery to load certain assets - please whitelist this website!<br>Source code is available <a href="https://github.com/meirisoda/meirisoda.online" target="_blank" class="click">here</a></p>
-        </main>    
-    <div id="footer"></div>
-    <body> 
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+<head>
+  <Imports></Imports>
+</head>
+
+<body>
+  <header data-page="index"></header>
+  <main>
+    <div class="snowflakes" aria-hidden="true">
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+      <Snow></Snow>
+    </div>
+
+    <img
+      class="relative"
+      src="/assets/images/aristocles_nobg_dither.webp"
+      style="max-width: 40em"
+    />
+    <div class="absolute" style="transform: translate(350px, -500px)">
+      <span>aristocles wishes everyone a</span>
+      <br /><span>happy holidays.</span>
+      <!-- aristocles walks through snowy hills
+            <br>in search of a soul. -->
+    </div>
+
+    <p>
+      <span>Source code is available</span>
+      <a
+        href="https://github.com/meirisoda/meirisoda.online"
+        target="_blank"
+        class="click"
+        >here</a
+      >
+    </p>
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>

@@ -1,24 +1,22 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../../templates/header.html" as="Header"></Import>
+<Import src="../../../templates/footer.html" as="Foot"></Import>
+<Import src="../../../templates/top.html" as="Top"></Import>
+<Import src="../../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="notes"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
-            <button onclick="topFunction()" id="top" title="Go to top">(back to top)</button> 
-            <br>
-            <a href="/pages/notes/archive.html">←</a>
-            <h2>DATE</h2>
-                entry
-        </main>
+<body>
+  <header data-page="notes blank"></header>
 
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+  <main>
+    <br />
+    <a href="/pages/notes/archive.html">←</a>
+    <h2>DATE</h2>
+    entry
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>

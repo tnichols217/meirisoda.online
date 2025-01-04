@@ -1,45 +1,50 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/assets/style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="/assets/soda/favicon.ico">
-        <script
-         src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/header.js"></script>
-    </head>
+<Import src="../../../templates/header.html" as="Header"></Import>
+<Import src="../../../templates/footer.html" as="Foot"></Import>
+<Import src="../../../templates/top.html" as="Top"></Import>
+<Import src="../../../templates/imports.html" as="Imports"></Import>
 
-    <body>
-    <div id="header" data-page="works other"></div>
+<head>
+  <Imports></Imports>
+</head>
 
-        <main>
-            <button onclick="topFunction()" id="top" title="Go to top">(back to top)</button> 
-            
-            <h2>other works</h2>
+<body>
+  <header data-page="works other"></header>
 
-            <div>
-                <img src="/assets/works/other/github1.png" class="image">
-                <br>
-                <a href="/pages/works/other/github.html"><div class="clickb inline">meirisoda.github.io</div></a> — my first website. 
-            </div>
+  <main>
+    <h2>other works</h2>
 
-            <br>
+    <div>
+      <img src="/assets/works/other/github1.png" class="image" />
+      <br />
+      <a href="/pages/works/other/github.html"
+        ><div class="clickb inline">meirisoda.github.io</div></a
+      >
+      — my first website.
+    </div>
 
-            <div>
-                <img src="/assets/works/other/infinition2.png" class="image">
-                <br>
-                <a href="/pages/works/other/infinition.html"><div class="clickb inline">infinition</div></a> — not so visual not so novel.
-            </div>
+    <br />
 
-            <br>
+    <div>
+      <img src="/assets/works/other/infinition2.png" class="image" />
+      <br />
+      <a href="/pages/works/other/infinition.html"
+        ><div class="clickb inline">infinition</div></a
+      >
+      — not so visual not so novel.
+    </div>
 
-            <div>
-                <img src="/assets/works/other/found.png" class="image">
-                <br>
-                <a href="/pages/works/other/expanse.html"><div class="clickb inline">found in an expanse</div></a> — also not so visual not so novel.
-            </div>
-        
-        </main>
-        
-    <div id="footer"></div>
-    <body>
-    <script type="text/javascript" src="/assets/js/top.js"></script>
-</html>
+    <br />
+
+    <div>
+      <img src="/assets/works/other/found.png" class="image" />
+      <br />
+      <a href="/pages/works/other/expanse.html"
+        ><div class="clickb inline">found in an expanse</div></a
+      >
+      — also not so visual not so novel.
+    </div>
+  </main>
+
+  <Foot></Foot>
+  <Top></Top>
+</body>
