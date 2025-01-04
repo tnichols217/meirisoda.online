@@ -1,10 +1,31 @@
+/** Theming **/
+
+@media (prefers-color-scheme: light) {
+  html, body, main {
+    --foreground: black;
+    --background: white;
+    --shadow: #eeeeee;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body, main {
+    --foreground: white;
+    --background: black;
+    --shadow: #7b7b7b;
+  }
+}
+
+/** Structuring **/
+
 html,
 body,
 pre,
 main {
   font-family: serif;
   font-size: 16px;
-  color: black;
+  color: var(--foreground);
+  background-color: var(--background);
   margin-left: 5px;
   position: relative;
 }
@@ -29,14 +50,14 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--foreground);
 }
 a:hover {
-  color: white;
-  background-color: black;
+  color: var(--background);
+  background-color: var(--foreground);
 }
 a::selection {
-  color: black;
+  color: var(--foreground);
 }
 
 .click {
@@ -60,7 +81,7 @@ a::selection {
   padding: 0px;
 }
 .border-top {
-  border-top: 1px dotted black;
+  border-top: 1px dotted var(--foreground);
 }
 
 .image {
@@ -80,14 +101,11 @@ a::selection {
 
 #top {
   display: inline-block;
-  /* position: fixed;
-  bottom: 50px;
-  left: 900px; */
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
+  background-color: var(--background);
+  color: var(--foreground);
   cursor: pointer;
   font-size: 16px;
   font-family: serif;
@@ -96,8 +114,8 @@ a::selection {
   pointer-events: all;
   top: calc(100vh - 5rem);
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--foreground);
+    color: var(--background);
   }
 }
 #top-wrap {
@@ -108,105 +126,38 @@ a::selection {
   pointer-events: none;
 }
 
-@media (prefers-color-scheme: light) {
-  footer {
-    clear: both;
-    margin: 0;
-    border-top: 2px dotted black;
-  }
-  .notes {
-    background: #eeeeee;
-    color: black;
-    width: fit-content;
-    border-radius: 8px;
-    margin: 1.5vh 0.5vw;
-    padding: 3px;
-    box-shadow:
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee,
-      0 0 10px #eeeeee;
-  }
+footer {
+  clear: both;
+  margin: 0;
+  border-top: 2px dotted var(--foreground);
+}
+.notes {
+  background: var(--shadow);
+  color: var(--foreground);
+  width: fit-content;
+  border-radius: 8px;
+  margin: 1.5vh 0.5vw;
+  padding: 3px;
+  box-shadow:
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow),
+    0 0 10px var(--shadow)
 }
 
-/* @media (prefers-color-scheme: dark) {
-  body,
-  main,
-  a {
-    color: white;
-    background: black;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    color: black;
-    background-color: white;
-  }
-  a::selection {
-    color: white;
-  }
-  nav ul li {
-    color: white;
-  }
-  footer {
-    clear: both;
-    margin: 0;
-    border-top: 2px dotted white;
-    color: white;
-  }
-  .notes {
-    background: #7b7b7b;
-    color: black;
-    width: fit-content;
-    border-radius: 8px;
-    margin: 1.5vh 0.5vw;
-    padding: 3px;
-    box-shadow:
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b,
-      0 0 10px #7b7b7b;
-  }
-  #top {
-    color: white;
-  }
-  #top:hover {
-    color: black;
-    background-color: white;
-  }
-  .invert {
-    filter: invert(1) hue-rotate(180deg);
-  }
-  #top {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    left: 900px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: serif;
-  }
-  #top:hover {
-    background-color: white;
-    color: black;
-  }
-} */
+/** Header **/
 
 #header[data-page] ul[data-page] {
   display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 /* if page tag contains -- to display */
@@ -232,7 +183,7 @@ a::selection {
   }
 }
 
-/* if page tag ends in -- italicized if current page*/
+/* if page tag ends in -- italicized if current page */
 #header[data-page$="works"] a[data-page="works"],
 #header[data-page$="notes"] a[data-page="notes"],
 #header[data-page$="insp"] a[data-page="insp"],
@@ -258,6 +209,8 @@ a::selection {
   font-family: Arial, sans-serif;
   text-shadow: 0 0 5px #000;
 }
+
+/** Snowflakes **/
 
 .snowflake,
 .snowflake .inner {
@@ -374,7 +327,8 @@ a::selection {
   animation-delay: 2.5s;
 }
 
-/* Smooth Scrolling */
+/** Smooth Scrolling **/
+
 @media screen {
   html {
     scroll-behavior: smooth;
