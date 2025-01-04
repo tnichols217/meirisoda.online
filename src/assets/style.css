@@ -1,7 +1,9 @@
 /** Theming **/
 
 @media (prefers-color-scheme: light) {
-  html, body, main {
+  html,
+  body,
+  main {
     --foreground: black;
     --background: white;
     --shadow: #eeeeee;
@@ -9,7 +11,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  html, body, main {
+  html,
+  body,
+  main {
     --foreground: white;
     --background: black;
     --shadow: #7b7b7b;
@@ -29,9 +33,11 @@ main {
   margin-left: 5px;
   position: relative;
 }
+
 main {
   max-width: 750px;
 }
+
 header {
   float: left;
   margin: 20px 20px 20px 20px;
@@ -40,10 +46,11 @@ header {
 nav {
   padding: 10px;
   padding-left: 0px;
+  & ul li {
+    list-style-type: none;
+  }
 }
-nav ul li {
-  list-style-type: none;
-}
+
 li {
   margin-left: 10px;
 }
@@ -51,13 +58,13 @@ li {
 a {
   text-decoration: none;
   color: var(--foreground);
-}
-a:hover {
-  color: var(--background);
-  background-color: var(--foreground);
-}
-a::selection {
-  color: var(--foreground);
+  &:hover {
+    color: var(--background);
+    background-color: var(--foreground);
+  }
+  &::selection {
+    color: var(--foreground);
+  }
 }
 
 .click {
@@ -126,11 +133,6 @@ a::selection {
   pointer-events: none;
 }
 
-footer {
-  clear: both;
-  margin: 0;
-  border-top: 2px dotted var(--foreground);
-}
 .notes {
   background: var(--shadow);
   color: var(--foreground);
@@ -145,10 +147,10 @@ footer {
     0 0 10px var(--shadow),
     0 0 10px var(--shadow),
     0 0 10px var(--shadow),
-    0 0 10px var(--shadow)
+    0 0 10px var(--shadow);
 }
 
-/** Header **/
+/** Header and Footer **/
 
 #header[data-page] ul[data-page] {
   display: none;
@@ -158,6 +160,12 @@ footer {
   .invert {
     filter: invert(1) hue-rotate(180deg);
   }
+}
+
+footer {
+  clear: both;
+  margin: 0;
+  border-top: 2px dotted var(--foreground);
 }
 
 /* if page tag contains -- to display */
@@ -234,6 +242,7 @@ footer {
     transform: translateX(80px);
   }
 }
+
 .snowflake {
   position: fixed;
   top: -10%;
