@@ -34,30 +34,17 @@ main {
   position: relative;
 }
 
-main {
-  max-width: 750px;
-}
-
-header {
-  float: left;
-  margin: 20px 20px 20px 20px;
-}
-
-nav {
-  padding: 10px;
-  padding-left: 0px;
+main {max-width: 750px;}
+header {float: left; margin: 20px 20px 20px 20px;}
+nav {padding: 10px; padding-left: 0px;
   & ul li {
     list-style-type: none;
   }
 }
 
-li {
-  margin-left: 10px;
-}
+li {margin-left: 10px;}
 
-a {
-  text-decoration: none;
-  color: var(--foreground);
+a {text-decoration: none; color: var(--foreground);
   &:hover {
     color: var(--background);
     background-color: var(--foreground);
@@ -67,44 +54,18 @@ a {
   }
 }
 
-.click {
-  text-decoration: underline;
-}
-.clickb {
-  text-decoration: underline;
-  font-weight: bold;
-}
+.click {text-decoration: underline;}
+.clickb {text-decoration: underline; font-weight: bold;}
 
-.inline {
-  display: inline-block;
-  vertical-align: top;
-}
-.inline_bottom {
-  display: inline-block;
-  vertical-align: middle;
-}
-.link {
-  margin: 0px;
-  padding: 0px;
-}
-.border-top {
-  border-top: 1px dotted var(--foreground);
-}
+.inline {display: inline-block; vertical-align: top;}
+.inline_bottom {display: inline-block;vertical-align: middle;}
+.link {margin: 0px;padding: 0px;}
+.border-top {border-top: 1px dotted var(--foreground);}
+.image {max-width: 750px;}
+.image_small {max-width: 600px;}
 
-.image {
-  max-width: 750px;
-}
-.image_small {
-  max-width: 600px;
-}
-
-.relative {
-  display: relative;
-}
-.absolute {
-  display: absolute;
-  z-index: 999;
-}
+.relative {display: relative;}
+.absolute {display: absolute;z-index: 999;}
 
 #top {
   display: inline-block;
