@@ -25,11 +25,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Nix
-        uses: cachix/install-nix-action@v30
-      - name: Build
-        run: |
-          nix run github:tnichols217/htms#htms -- --input ./ --output ./out --config config.nix
       - name: build-htms
         uses: tnichols217/htms@v1
       - name: Setup Pages
