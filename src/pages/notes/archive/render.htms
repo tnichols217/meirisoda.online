@@ -9,7 +9,6 @@
 <body>
     <Heade data-page="notes archive"></Heade>
 
-    
     <main>
         <a href="/pages/notes/archive.html">←</a>
         {{{}}}
