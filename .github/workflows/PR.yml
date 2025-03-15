@@ -25,7 +25,7 @@ jobs:
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: 1
+          issue-number: ${{ github.event.pull_request.number }}
           body: |
             Artifact may be downloaded [here](${{ steps.upload-artifact.outputs.artifact-url }})
           reactions: '+1'
